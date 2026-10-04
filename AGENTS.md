@@ -45,3 +45,13 @@
 ## 2. Tiêu chuẩn phản hồi
 - Giữ phong cách ngắn gọn, súc tích, giải quyết thẳng vào vấn đề.
 - Ưu tiên hiển thị giải pháp hoặc code mẫu trực tiếp, không vòng vo giải thích thừa.
+
+# Sinh học / hóa học / MD
+- Luôn ghi rõ phiên bản bộ gen (hg19/hg38), hệ tọa độ (0-based/1-based) và phiên bản CSDL.
+- Đa kiểm định: hiệu chỉnh (FDR/Bonferroni) và báo cáo cỡ hiệu ứng, không chỉ p-value.
+- Tách train/test theo scaffold (phân tử) hoặc theo độ tương đồng chuỗi (protein) để tránh rò rỉ.
+- Docking chỉ cho xếp hạng sơ bộ: kiểm tra tư thế, không diễn giải điểm số thành ái lực thật.
+- MD: ghi force field, thuật toán hồi áp/nhiệt, bước thời gian, cân bằng hóa; kiểm tra hội tụ
+  (RMSD/năng lượng/mật độ), chạy nhiều bản lặp; một quỹ đạo đơn lẻ không đủ để kết luận.
+- Không tự gọi API ngoài hay dịch vụ đám mây với dữ liệu chưa công bố hoặc dữ liệu bệnh nhân; hỏi trước.
+- Không đưa kết luận y khoa hay khuyến nghị điều trị; chỉ báo cáo phân tích và độ bất định.
